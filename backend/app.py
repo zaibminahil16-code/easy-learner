@@ -5,8 +5,8 @@ from llm_service import generate_trace, generate_explanations
 import os
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
-
+ALLOWED = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+CORS(app, origins=ALLOWED)
 @app.route("/health")
 def health():
     return jsonify({"status": "ok"})
