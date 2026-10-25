@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Easy Learner",
+  "name": "Easy Learner – Interactive Python Platform",
+  "description": "Learn Python step by step with AI-generated code traces, memory views and explanations.",
+  "id": "/",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +12,21 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ],
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "any",
+  "theme_color": "#0f1117",
+  "background_color": "#0f1117",
+  "categories": ["education", "developer"]
 }
